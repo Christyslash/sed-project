@@ -13,6 +13,7 @@ use Illuminate\Support\Collection;
 class Project extends Model
 {
     use HasFactory;
+     protected $guarded = [''];
 
     /**
      * The attributes that are mass assignable.
