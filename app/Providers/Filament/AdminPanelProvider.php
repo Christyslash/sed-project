@@ -49,13 +49,13 @@ class AdminPanelProvider extends PanelProvider
                     }),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
                 \Stephenjude\FilamentDebugger\DebuggerPlugin::make(),
-                \DutchCodingCompany\FilamentDeveloperLogins\FilamentDeveloperLoginsPlugin::make()
-                    ->enabled(!app()->environment('production'))
-                    ->switchable(true)
-                    ->users([
-                        'Admin' => 'admin@' . config('app.domain'),
-                        'SuperAdmin' => 'super.admin@' . config('app.domain'),
-                    ])
+                // \DutchCodingCompany\FilamentDeveloperLogins\FilamentDeveloperLoginsPlugin::make()
+                //     ->enabled(!app()->environment('production'))
+                //     ->switchable(true)
+                //     ->users([
+                //         'Admin' => 'admin@' . config('app.domain'),
+                //         'SuperAdmin' => 'super.admin@' . config('app.domain'),
+                //     ])
             ])
             ->widgets([
                 Widgets\AccountWidget::class,
